@@ -72,3 +72,42 @@
     }
   }
 }
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 88px;
+  padding-bottom: 123px;
+}
+
+.section-content {
+  max-width: 400px;
+  min-height: 241px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 126%;
+    color: $black;
+
+    .pick {
+      color: $orange;
+    }
+  }
+
+  .text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 138.5%;
+    letter-spacing: 0.08em;
+    text-transform: capitalize;
+    color: $black;
+  }
+}
