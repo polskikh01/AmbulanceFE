@@ -1,1 +1,34 @@
 @import "../assets/styles/color";
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section-content {
+  width: 400px;
+  height: 241px;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 126%;
+    color: $black;
+  }
+
+  span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 138.5%;
+    letter-spacing: 0.08em;
+    text-transform: capitalize;
+    color: $black;
+    margin: 25px 0 25px 0;
+  }
+}
