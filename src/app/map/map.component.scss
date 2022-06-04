@@ -1,13 +1,78 @@
+@import '../../assets/styles/color';
+
 .map-container {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin-top: 180px;
 
   .map-frame {
-    width: 750px;
-    height: 500px;
+    width: 1050px;
+    height: 781px;
 
     #map {
       height: 100%;
+    }
+  }
+
+  .options {
+    display: flex;
+    width: 27%;
+    flex-direction: column;
+    padding: 25px 20px;
+    background-color: $white-dirty;
+
+    .title {
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 55px;
+      color: $black;
+      margin-bottom: 25px;
+    }
+
+    .text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 17px;
+      letter-spacing: 0.08em;
+      text-transform: capitalize;
+      color: $black;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .param {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-width: 100%;
+        min-height: 80px;
+        margin-bottom: 25px;
+
+        .input {
+          height: 48px;
+          border: 1px solid #E9E9E9;
+          border-radius: 8px;
+          flex: none;
+          order: 0;
+          align-self: stretch;
+          flex-grow: 0;
+          outline: none;
+          padding-left: 15px;
+          color: rgba(0, 0, 0, 0.6);
+
+          &:focus {
+            background: rgba(43, 75, 242, 0.06);
+            border: 1px solid #6499FF;
+            color: $black;
+          }
+        }
+      }
     }
   }
 }
