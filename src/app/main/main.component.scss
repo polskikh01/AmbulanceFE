@@ -1,0 +1,268 @@
+@import "../../assets/styles/color";
+
+.info {
+  background-color: $white-dirty;
+  padding: 52px 108px 118px 108px;
+  background-image: url('../../assets/images/orangeBlock.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      min-width: 400px;
+
+      .link {
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $black;
+      }
+    }
+  }
+
+  .health {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .getStart {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      min-height: 240px;
+      margin-right: 12px;
+
+      .title {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 44px;
+        color: $black;
+
+        .pick {
+          color: $blue-light;
+        }
+      }
+
+      .text {
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: 0.08em;
+        text-transform: capitalize;
+        color: $black;
+        max-width: 375px;
+      }
+    }
+  }
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 88px;
+  padding-bottom: 123px;
+}
+
+.section-content {
+  max-width: 400px;
+  min-height: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 44px;
+    color: $black;
+
+    .pick {
+      color: $orange;
+    }
+  }
+
+  .text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 138.5%;
+    letter-spacing: 0.08em;
+    text-transform: capitalize;
+    color: $black;
+  }
+}
+
+.experts-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 33px;
+  background-color: $white-dirty;
+}
+
+.experts-block-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 774px;
+  height: 168px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 20px rgba(88, 126, 236, 0.15);
+  border-radius: 16px;
+}
+
+.experts-container-md {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.experts-container-sm {
+  width: 967.94px;
+  height: 307.36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../assets/images/squares-little.svg");
+}
+
+.experts-block {
+  display: flex;
+  flex-direction: row;
+  width: 561px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experts-block-text-h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.14em;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: $orange;
+}
+
+.experts-block-text-span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.37em;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: $black;
+}
+
+.talkExp-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  align-items: center;
+  justify-content: space-between;
+  width: 990px;
+  margin-bottom: 122px;
+}
+
+.talkExp-content {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 196px;
+}
+
+.talkExp-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 126%;
+  color: $black;
+  padding-bottom: 30px;
+}
+
+.talkExp-blue {
+  color: $blue;
+}
+
+.talkExp-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 138.5%;
+  letter-spacing: 0.08em;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+
+.talkExp-img {
+  background-image: url("../../assets/images/integration.png");
+  width: 380px;
+  height: 350px;
+}
+
+.healthcare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 87px;
+  padding-bottom: 60px;
+  background-image: url('../../assets/images/bgSc.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+
+  .title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 55px;
+    text-align: center;
+    color: $black;
+    margin-bottom: 75px;
+
+    .pick {
+      color: $orange;
+    }
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #616161;
+    max-width: 640px;
+    margin-bottom: 90px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    padding-left: 195px;
+    padding-right: 156px;
+  }
+}
