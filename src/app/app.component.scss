@@ -114,7 +114,8 @@
 .experts-container {
   display: flex;
   flex-direction: column;
-  margin-top: 33px;
+  padding-top: 33px;
+  background-color: $white-dirty;
 }
 
 .experts-block-container {
@@ -173,7 +174,6 @@
   color: $black;
 }
 
-
 .talkExp-container {
   display: flex;
   flex-direction: row;
@@ -215,9 +215,9 @@
 }
 
 .talkExp-img {
-  background-image: url("../assets/images/stethoscope.svg");
-  width: 306px;
-  height: 237px;
+  background-image: url("../assets/images/integration.png");
+  width: 380px;
+  height: 350px;
 }
 
 .healthcare {
