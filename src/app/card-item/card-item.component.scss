@@ -1,0 +1,37 @@
+@import "../../assets/styles/color";
+
+.cardItem {
+  padding: 56px 43px;
+  background: $white;
+  box-shadow: 0 4px 18px rgba(88, 126, 236, 0.18);
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+
+    .icon {
+      width: 65px;
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: 0.08em;
+      color: $black;
+    }
+
+    .text {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 17px;
+      text-align: center;
+      letter-spacing: 0.08em;
+      color: $grey;
+      max-width: 242px;
+    }
+  }
+}

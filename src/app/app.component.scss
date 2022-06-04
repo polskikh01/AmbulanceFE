@@ -111,3 +111,50 @@
     color: $black;
   }
 }
+
+.healthcare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 87px;
+  padding-bottom: 60px;
+  background-image: url('../assets/images/bgSc.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+
+  .title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 55px;
+    text-align: center;
+    color: $black;
+    margin-bottom: 8px;
+
+    .pick {
+      color: $orange;
+    }
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #616161;
+    max-width: 640px;
+    margin-bottom: 90px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    padding-left: 195px;
+    padding-right: 156px;
+  }
+}
