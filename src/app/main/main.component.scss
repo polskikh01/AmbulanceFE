@@ -2,38 +2,11 @@
 
 .info {
   background-color: $white-dirty;
-  padding: 52px 108px 118px 108px;
+  padding: 180px 108px 118px 108px;
   background-image: url('../../assets/images/orangeBlock.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 100% 0;
-
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 80px;
-
-    .nav {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      list-style: none;
-      min-width: 400px;
-
-      .link {
-        font-weight: 700;
-        font-size: 10px;
-        line-height: 12px;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: $black;
-      }
-    }
-  }
 
   .health {
     display: flex;

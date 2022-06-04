@@ -7,6 +7,7 @@ import { ButtonComponent } from './button/button.component';
 import { CardItemComponent } from './card-item/card-item.component';
 import { MapComponent } from './map/map.component';
 import { MainComponent } from './main/main.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MainComponent } from './main/main.component';
     ButtonComponent,
     CardItemComponent,
     MapComponent,
-    MainComponent
+    MainComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
