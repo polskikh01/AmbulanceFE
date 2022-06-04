@@ -52,9 +52,8 @@
       .title {
         font-weight: 700;
         font-size: 44px;
-        line-height: 55px;
+        line-height: 44px;
         color: $black;
-        max-width: 400px;
 
         .pick {
           color: $blue-light;
@@ -84,7 +83,7 @@
 
 .section-content {
   max-width: 400px;
-  min-height: 241px;
+  min-height: 275px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -93,7 +92,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 44px;
-    line-height: 126%;
+    line-height: 44px;
     color: $black;
 
     .pick {
@@ -238,7 +237,7 @@
     line-height: 55px;
     text-align: center;
     color: $black;
-    margin-bottom: 8px;
+    margin-bottom: 75px;
 
     .pick {
       color: $orange;
