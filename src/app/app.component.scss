@@ -111,3 +111,112 @@
     color: $black;
   }
 }
+
+.experts-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 33px;
+}
+
+.experts-block-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 774px;
+  height: 168px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 20px rgba(88, 126, 236, 0.15);
+  border-radius: 16px;
+}
+
+.experts-container-md {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.experts-container-sm {
+  width: 967.94px;
+  height: 307.36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../assets/images/squares-little.svg");
+}
+
+.experts-block {
+  display: flex;
+  flex-direction: row;
+  width: 561px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.experts-block-text-h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.14em;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: $orange;
+}
+
+.experts-block-text-span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.37em;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: $black;
+}
+
+
+.talkExp-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+  align-items: center;
+  justify-content: space-between;
+  width: 990px;
+  margin-bottom: 122px;
+}
+
+.talkExp-content {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 196px;
+}
+
+.talkExp-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 126%;
+  color: $black;
+  padding-bottom: 30px;
+}
+
+.talkExp-blue {
+  color: $blue;
+}
+
+.talkExp-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 138.5%;
+  letter-spacing: 0.08em;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+
+.talkExp-img {
+  background-image: url("../assets/images/stethoscope.svg");
+  width: 306px;
+  height: 237px;
+}
