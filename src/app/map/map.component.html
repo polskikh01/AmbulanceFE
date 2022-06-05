@@ -4,24 +4,24 @@
   </div>
   <div class="options">
     <span class="title">Параметры</span>
-    <form class="form">
+    <div class="form">
       <div class="param">
         <label class="text" for="choisePsmp">Выберите ПСМП: </label>
         <select id="choisePsmp">
           <option disabled>Выберите подстанцию</option>
-          <option value="o1">Подстанция №1</option>
-          <option value="o2">Подстанция №2</option>
-          <option value="o3">Подстанция №3</option>
-          <option value="o4">Подстанция №4</option>
-          <option value="o5">Подстанция №5</option>
-          <option value="o6">Подстанция №6</option>
-          <option value="o7">Подстанция №7</option>
-          <option value="o8">Подстанция №8</option>
-          <option value="o9">Подстанция №9</option>
+          <option value="1">Подстанция №1</option>
+          <option value="2">Подстанция №2</option>
+          <option value="3">Подстанция №3</option>
+          <option value="4">Подстанция №4</option>
+          <option value="5">Подстанция №5</option>
+          <option value="6">Подстанция №6</option>
+          <option value="7">Подстанция №7</option>
+          <option value="8">Подстанция №8</option>
+          <option value="9">Подстанция №9</option>
         </select>
       </div>
-      <app-button btnText="Принять"></app-button>
-    </form>
+      <app-button (click)="addTag()" btnText="Принять"></app-button>
+    </div>
     <span id="results">
 
     </span>
