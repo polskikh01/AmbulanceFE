@@ -28,7 +28,7 @@ export class MapComponent implements OnInit {
 
     function onPolygonClick(region: number){
       //alert("Hello there!");
-      
+
       fetch('http://localhost:8080/test?id='+region, { mode: 'cors'})
         .then(
         function(response) {
@@ -47,7 +47,7 @@ export class MapComponent implements OnInit {
         });
     }
 
-    var polygon1 = L.polygon([ //автозаводский р-н
+    const polygon1 = L.polygon([ //автозаводский р-н
       [56.250861, 43.947081],
       [56.289988, 43.885569],
       [56.266470, 43.822102],
@@ -55,7 +55,7 @@ export class MapComponent implements OnInit {
       [56.193383, 43.708395],
       [56.185967, 43.807143],
       [56.250861, 43.947081]
-    ],{color: 'violet'}).on('click', onPolygonClick.bind(null,0,null)).addTo(this.map);
+    ],{color: 'gold'}).on('click', onPolygonClick.bind(null,0,null)).addTo(this.map);
 
     var polygon2 = L.polygon([ //приокский р-н
       [56.258944, 43.959536],
@@ -65,7 +65,7 @@ export class MapComponent implements OnInit {
       [56.290497, 43.994960],
       [56.290024, 43.963362],
       [56.258944, 43.959536]
-    ],{color: 'violet'}).on('click', onPolygonClick.bind(null,1,null)).addTo(this.map);
+    ],{color: 'orange'}).on('click', onPolygonClick.bind(null,1,null)).addTo(this.map);
 
     var polygon3 = L.polygon([ //ленинский р-н
       [56.251164, 43.947094],
@@ -77,7 +77,7 @@ export class MapComponent implements OnInit {
       [56.299122, 43.961909],
       [56.264046, 43.963838],
       [56.251164, 43.947094]
-    ],{color: 'violet'}).on('click', onPolygonClick.bind(null,2,null)).addTo(this.map);
+    ],{color: 'green'}).on('click', onPolygonClick.bind(null,2,null)).addTo(this.map);
 
     var polygon4 = L.polygon([ //московский р-н
       [56.314330, 43.898231],
@@ -95,7 +95,7 @@ export class MapComponent implements OnInit {
       [56.314330, 43.898231]
     ],{color: 'violet'}).on('click', onPolygonClick.bind(null,3,null)).addTo(this.map);
 
-    var polygon5 = L.polygon([ //канавинский р-н
+    const polygon5 = L.polygon([ //канавинский р-н
       [56.314564, 43.898439],
       [56.305791, 43.904933],
       [56.267765, 43.801832],
@@ -104,9 +104,9 @@ export class MapComponent implements OnInit {
       [56.305882, 43.760665],
       [56.309500, 43.758772],
       [56.314564, 43.898439]
-    ],{color: 'violet'}).on('click', onPolygonClick.bind(null,4,null)).addTo(this.map);
+    ],{color: 'blue'}).on('click', onPolygonClick.bind(null,4,null)).addTo(this.map);
 
-    var polygon6 = L.polygon([ //сормовский р-н
+    const polygon6 = L.polygon([ //сормовский р-н
       [56.355325, 43.906159],
       [56.350494, 43.894757],
       [56.336564, 43.885718],
@@ -126,6 +126,61 @@ export class MapComponent implements OnInit {
       [56.389163, 43.869797],
       [56.355325, 43.906159]
     ],{color: 'violet'}).on('click', onPolygonClick.bind(null,5,null)).addTo(this.map);
+
+    const polygon7 = L.polygon([ //нижегородский р-н
+      [56.191486, 44.051401],
+      [56.187541, 44.080147],
+      [56.190789, 44.107269],
+      [56.174356, 44.154991],
+      [56.160402, 44.152931],
+      [56.158108, 44.139198],
+      [56.160402, 44.104179],
+      [56.158490, 44.085640],
+      [56.158681, 44.066414],
+      [56.162123, 44.040321],
+      [56.156196, 44.014915],
+      [56.162727, 44.005207],
+      [56.164238, 43.994563],
+      [56.165755, 43.977493],
+      [56.179898, 43.987450],
+      [56.190980, 44.016975],
+      [56.197921, 44.018559],
+      [56.201063, 44.031833],
+      [56.192736, 44.054709],
+      [56.191426, 44.051508]
+    ],{color: 'red'}).on('click', onPolygonClick.bind(null,5,null)).addTo(this.map);
+
+    const polygon8 = L.polygon([ //советский р-н
+      [56.277184, 43.963974],
+      [56.314619, 43.963287],
+      [56.313953, 43.971184],
+      [56.317571, 43.974102],
+      [56.317380, 43.982857],
+      [56.313191, 43.992641],
+      [56.320046, 44.031094],
+      [56.313287, 44.042252],
+      [56.293096, 44.054440],
+      [56.290238, 44.052551],
+      [56.285760, 44.055126],
+      [56.281187, 44.052895],
+      [56.278614, 44.053066],
+      [56.266032, 44.077099],
+      [56.260789, 44.080189],
+      [56.255163, 44.077099],
+      [56.252779, 44.072464],
+      [56.246294, 44.077957],
+      [56.245054, 44.068516],
+      [56.248678, 44.065083],
+      [56.245435, 44.059246],
+      [56.249632, 44.032810],
+      [56.262314, 44.044140],
+      [56.277089, 44.032810],
+      [56.295763, 44.033840],
+      [56.290619, 43.995388],
+      [56.291828, 43.982025],
+      [56.277592, 43.978511],
+      [56.277007, 43.964106]
+    ],{color: 'white'}).on('click', onPolygonClick.bind(null,5,null)).addTo(this.map);
 
     /*
     L.marker([56.5, 43.09]).addTo(this.map)
