@@ -148,7 +148,7 @@ export class MapComponent implements OnInit {
       [56.201063, 44.031833],
       [56.192736, 44.054709],
       [56.191426, 44.051508]
-    ],{color: 'red'}).on('click', onPolygonClick.bind(null,5,null)).addTo(this.map);
+    ],{color: 'red'}).on('click', onPolygonClick.bind(null,6,null)).addTo(this.map);
 
     const polygon8 = L.polygon([ //советский р-н
       [56.277184, 43.963974],
@@ -180,7 +180,7 @@ export class MapComponent implements OnInit {
       [56.291828, 43.982025],
       [56.277592, 43.978511],
       [56.277007, 43.964106]
-    ],{color: 'white'}).on('click', onPolygonClick.bind(null,5,null)).addTo(this.map);
+    ],{color: 'white'}).on('click', onPolygonClick.bind(null,7,null)).addTo(this.map);
 
     /*
     L.marker([56.5, 43.09]).addTo(this.map)
