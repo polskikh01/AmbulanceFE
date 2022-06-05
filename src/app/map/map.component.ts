@@ -79,6 +79,22 @@ export class MapComponent implements OnInit {
       [56.251164, 43.947094]
     ],{color: 'violet'}).on('click', onPolygonClick.bind(null,2,null)).addTo(this.map);
 
+    var polygon4 = L.polygon([ //московский р-н
+      [56.314330, 43.898231],
+      [56.307708, 43.738282],
+      [56.321514, 43.771522],
+      [56.341511, 43.807734],
+      [56.343747, 43.840717],
+      [56.331910, 43.861945],
+      [56.344451, 43.873697],
+      [56.336814, 43.886015],
+      [56.358110, 43.897150],
+      [56.351966, 43.921850],
+      [56.337121, 43.921054],
+      [56.324193, 43.914092],
+      [56.314330, 43.898231]
+    ],{color: 'violet'}).on('click', onPolygonClick.bind(null,3,null)).addTo(this.map);
+
     /*
     L.marker([56.5, 43.09]).addTo(this.map)
     .bindPopup('Hello there.<br> Custom me.')
