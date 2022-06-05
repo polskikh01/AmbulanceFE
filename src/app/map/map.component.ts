@@ -20,10 +20,25 @@ export class MapComponent implements OnInit {
     const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
       minZoom: 10,
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      attribution: '<a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     });
 
     tiles.addTo(this.map);
+
+    function onPolygonClick(){
+      alert("Hello there!");
+    }
+
+    var polygon = L.polygon([
+      [56.3287, 44.002],
+      [56.323, 44.000],
+      [56.38, 44.200]
+    ]).on('click', onPolygonClick).addTo(this.map);
+    /*
+    L.marker([56.5, 43.09]).addTo(this.map)
+    .bindPopup('Hello there.<br> Custom me.')
+    .openPopup();
+    */
 
   }
 
