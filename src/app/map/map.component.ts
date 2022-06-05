@@ -46,11 +46,16 @@ export class MapComponent implements OnInit {
         });
     }
 
-    var polygon = L.polygon([
-      [56.3, 44.1],
-      [56.2, 44.2],
-      [56.35, 44.15]
+    var polygon = L.polygon([ //автозаводский р-н
+      [56.250861, 43.947081],
+      [56.289988, 43.885569],
+      [56.266470, 43.822102],
+      [56.276884, 43.763038],
+      [56.193383, 43.708395],
+      [56.185967, 43.807143],
+      [56.250861, 43.947081]
     ]).on('click', onPolygonClick).addTo(this.map);
+
     /*
     L.marker([56.5, 43.09]).addTo(this.map)
     .bindPopup('Hello there.<br> Custom me.')
