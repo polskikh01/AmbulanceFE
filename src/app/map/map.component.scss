@@ -23,6 +23,13 @@
     padding: 25px 20px;
     background-color: $white-dirty;
 
+    #results {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background: #c7dbfd;
+      height: 500px;
+    }
     .title {
       font-weight: 700;
       font-size: 44px;

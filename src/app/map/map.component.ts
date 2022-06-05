@@ -26,7 +26,8 @@ export class MapComponent implements OnInit {
     tiles.addTo(this.map);
 
     function onPolygonClick(){
-      alert("Hello there!");
+      //alert("Hello there!");
+      document.getElementById("results")!.innerHTML = "Район такой-то";
     }
 
     var polygon = L.polygon([
