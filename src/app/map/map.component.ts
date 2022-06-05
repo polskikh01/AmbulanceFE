@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as L from 'leaflet';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-map',
@@ -27,13 +28,28 @@ export class MapComponent implements OnInit {
 
     function onPolygonClick(){
       //alert("Hello there!");
-      document.getElementById("results")!.innerHTML = "Район такой-то";
+      
+      fetch('http://localhost:8080/test', { mode: 'cors'})
+        .then(
+        function(response) {
+            if (response.status !== 200) {
+              console.log('Looks like there was a problem. Status Code: ' + response.status);
+              return;
+            }
+
+            response.json().then(function(data) {
+              document.getElementById("results")!.innerHTML = data.message;
+              console.log(data);
+            });
+        }).catch(function(err) {
+          console.log('Fetch Error :-S', err);
+        });
     }
 
     var polygon = L.polygon([
-      [56.3287, 44.002],
-      [56.323, 44.000],
-      [56.38, 44.200]
+      [56.3, 44.1],
+      [56.2, 44.2],
+      [56.35, 44.15]
     ]).on('click', onPolygonClick).addTo(this.map);
     /*
     L.marker([56.5, 43.09]).addTo(this.map)
@@ -48,5 +64,4 @@ export class MapComponent implements OnInit {
   ngOnInit(): void {
     this.initMap();
   }
-
 }
